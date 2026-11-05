@@ -41,7 +41,7 @@ PubkeyAuthentication yes
 CONF
 mkdir -p /run/sshd   # Ubuntu 24.04 only creates this once ssh has started
 sshd -t
-systemctl reload ssh 2>/dev/null || systemctl reload sshd
+systemctl try-reload-or-restart ssh.service 2>/dev/null || true   # 24.04 starts ssh on demand, so it may not be running
 
 echo "==> Firewall: only SSH and web traffic"
 ufw default deny incoming
