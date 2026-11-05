@@ -104,7 +104,6 @@ ln -sf /etc/nginx/sites-available/rainhater /etc/nginx/sites-enabled/rainhater
 rm -f /etc/nginx/sites-enabled/default
 cat > /etc/nginx/conf.d/rainhater-tuning.conf <<'CONF'
 server_tokens off;
-gzip on;
 gzip_comp_level 5;
 gzip_types text/css application/javascript image/svg+xml text/plain application/json;
 CONF
