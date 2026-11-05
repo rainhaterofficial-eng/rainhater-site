@@ -39,6 +39,7 @@ KbdInteractiveAuthentication no
 PermitRootLogin no
 PubkeyAuthentication yes
 CONF
+mkdir -p /run/sshd   # Ubuntu 24.04 only creates this once ssh has started
 sshd -t
 systemctl reload ssh 2>/dev/null || systemctl reload sshd
 
