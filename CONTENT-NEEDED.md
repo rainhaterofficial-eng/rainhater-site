@@ -1,7 +1,7 @@
 # Content still needed from John
 
 ## Decisions
-- [x] Contact: a form that emails rainhaterofficial@gmail.com (built; needs a free Formspree form connected)
+- [x] Contact: Instagram DM (preferred) or email rainhaterofficial@gmail.com. No form.
 - [x] Coaching: music production coaching in Ableton Live
 - [ ] Coaching: should people book a time or pay on the site, or just send a message? (message only for now)
 - [x] Merch: sold directly on the site later; shows "coming soon" for now
@@ -10,7 +10,8 @@
 ## Everywhere
 - [ ] Logo (currently the word "rainhater" with a crossed-out raindrop icon)
 - [ ] Short tagline (footer)
-- [ ] Social links: Instagram, TikTok, YouTube, Spotify (and any others)
+- [x] Social links: Instagram, X, YouTube, TikTok
+- [ ] Spotify / Apple Music links, if you have them
 - [ ] "Now playing" bar: song title, a streaming link, and optionally the audio file
 
 ## Home
@@ -36,5 +37,3 @@
 - [ ] Stats (releases, listeners, year started), or remove
 - [ ] Quote / motto
 
-## Contact
-- [ ] Social handles for the "Elsewhere" links

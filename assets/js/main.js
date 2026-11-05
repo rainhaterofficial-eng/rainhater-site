@@ -43,32 +43,3 @@
   if (y) y.textContent = new Date().getFullYear();
 })();
 
-// Contact form: sends through Formspree, which emails the message to rainhater.
-(function () {
-  var form = document.getElementById('contact-form');
-  if (!form) return;
-  var topic = new URLSearchParams(location.search).get('topic');
-  if (topic === 'coaching') { var sel = document.getElementById('topic'); if (sel) sel.value = 'Coaching'; }
-  var status = form.querySelector('.form-status');
-  var btn = form.querySelector('button[type="submit"]');
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    status.className = 'form-status';
-    if (form.action.indexOf('YOUR_FORM_ID') !== -1) {
-      status.textContent = 'The form is not connected yet. It will be before the site goes live.';
-      return;
-    }
-    btn.disabled = true; btn.textContent = 'Sending...';
-    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
-      .then(function (r) {
-        if (!r.ok) throw new Error();
-        form.reset();
-        status.textContent = 'Thanks! Your message was sent. I will get back to you soon.';
-      })
-      .catch(function () {
-        status.className = 'form-status error';
-        status.textContent = 'Something went wrong. Please try again in a minute.';
-      })
-      .then(function () { btn.disabled = false; btn.textContent = 'Send message'; });
-  });
-})();
