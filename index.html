@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rainhater</title>
+<meta name="description" content="rainhater — music, videos, coaching and merch.">
+<meta name="theme-color" content="#0b0d0f">
+<meta property="og:title" content="rainhater">
+<meta property="og:description" content="rainhater — music, videos, coaching and merch.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="nowplaying">
+  <div class="wrap">
+    <button class="np-btn" aria-label="Play"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 0l9 5-9 5z" fill="currentColor"/></svg></button>
+    <span class="np-title">Now playing: "Song Title" — rainhater</span>
+    <a class="np-link" href="#">Listen</a><!-- TODO: link to Spotify / streaming -->
+    <audio id="np-audio" src="assets/audio/latest.mp3" preload="none"></audio>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><svg class="drop" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C32 4 10 32 10 44a22 22 0 0 0 44 0C54 32 32 4 32 4z" fill="currentColor"/><path d="M14 58L50 14" stroke="#0b0d0f" stroke-width="7"/></svg>rainhater</a>
+    <nav class="nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="coaching.html">Coaching</a><a href="merch.html">Merch</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-media"><!-- TODO: swap in real photo, or a muted looping video:
+    <video autoplay muted loop playsinline poster="assets/img/hero.jpg"><source src="assets/video/hero.mp4" type="video/mp4"></video> --></div>
+  <div class="rain"></div><div class="rain r2"></div>
+  <div class="wrap hero-inner">
+    <p class="kicker">New single out now</p>
+    <h1 class="mega">rain<span class="outline">hater</span></h1>
+    <p class="lede">Placeholder intro line. One or two sentences about the sound, the attitude, and what you'll find here.</p>
+    <div class="btns">
+      <a class="btn btn-solid" href="#"><svg width="14" height="14" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 0l9 5-9 5z" fill="currentColor"/></svg> Listen now</a>
+      <a class="btn btn-ghost" href="coaching.html">Coaching</a>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track">
+  <span>New music</span><span>Coaching open</span><span>Merch drop</span><span>Never liked the rain</span><span>New music</span><span>Coaching open</span><span>Merch drop</span><span>Never liked the rain</span>
+</div></div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="feature reveal">
+      <a class="thumb" href="#"><img src="assets/img/video-1.svg" alt="Latest music video (placeholder)"><span class="tag">Latest video</span><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 0l9 5-9 5z" fill="currentColor"/></svg></span></a>
+      <div>
+        <p class="kicker">Watch</p>
+        <h2 class="h2">Video title here</h2>
+        <p class="muted">A sentence about the newest video. Swap in a YouTube link or embed when it's ready.</p>
+        <a class="btn btn-ghost" href="#">Watch on YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2 class="h2">Music</h2><a class="more" href="#">All releases</a></div>
+    <div class="grid grid-4">
+      <a class="card reveal" href="#"><div class="thumb square"><img src="assets/img/release-1.svg" alt="" loading="lazy"></div><div class="card-body"><h3 class="h3">Release one</h3><p>Single · 2026</p></div></a>
+      <a class="card reveal" href="#"><div class="thumb square"><img src="assets/img/release-2.svg" alt="" loading="lazy"></div><div class="card-body"><h3 class="h3">Release two</h3><p>EP · 2025</p></div></a>
+      <a class="card reveal" href="#"><div class="thumb square"><img src="assets/img/release-3.svg" alt="" loading="lazy"></div><div class="card-body"><h3 class="h3">Release three</h3><p>Single · 2025</p></div></a>
+      <a class="card reveal" href="#"><div class="thumb square"><img src="assets/img/release-4.svg" alt="" loading="lazy"></div><div class="card-body"><h3 class="h3">Release four</h3><p>Single · 2024</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2 class="h2">Videos</h2><a class="more" href="#">YouTube</a></div>
+    <div class="grid grid-3">
+      <a class="card reveal" href="#"><div class="thumb"><img src="assets/img/video-1.svg" alt="" loading="lazy"><span class="tag">Music video</span><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 0l9 5-9 5z" fill="currentColor"/></svg></span></div><div class="card-body"><h3 class="h3">Video one</h3><p>Official video</p></div></a>
+      <a class="card reveal" href="#"><div class="thumb"><img src="assets/img/video-2.svg" alt="" loading="lazy"><span class="tag">Vlog</span><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 0l9 5-9 5z" fill="currentColor"/></svg></span></div><div class="card-body"><h3 class="h3">Video two</h3><p>Behind the scenes</p></div></a>
+      <a class="card reveal" href="#"><div class="thumb"><img src="assets/img/video-3.svg" alt="" loading="lazy"><span class="tag">Live</span><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 0l9 5-9 5z" fill="currentColor"/></svg></span></div><div class="card-body"><h3 class="h3">Video three</h3><p>Live session</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="kicker">Coaching</p>
+      <h2 class="h2">Learn from rainhater</h2>
+    </div>
+    <div class="reveal prose">
+      <p>Placeholder: a short pitch for your coaching. Who it's for and what they walk away with.</p>
+      <p class="muted">Details, pricing, and booking will go on the Coaching page.</p>
+      <a class="btn btn-solid" href="coaching.html">See coaching</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2 class="h2">Merch</h2><a class="more" href="merch.html">Shop all</a></div>
+    <div class="grid grid-4">
+      <a class="card reveal" href="#"><div class="thumb tall"><img src="assets/img/merch-1.svg" alt="" loading="lazy"></div><div class="card-body"><h3 class="h3">Item one</h3><span class="price">$00</span></div></a>
+      <a class="card reveal" href="#"><div class="thumb tall"><img src="assets/img/merch-2.svg" alt="" loading="lazy"></div><div class="card-body"><h3 class="h3">Item two</h3><span class="price">$00</span></div></a>
+      <a class="card reveal" href="#"><div class="thumb tall"><img src="assets/img/merch-3.svg" alt="" loading="lazy"></div><div class="card-body"><h3 class="h3">Item three</h3><span class="price">$00</span></div></a>
+      <a class="card reveal" href="#"><div class="thumb tall"><img src="assets/img/merch-4.svg" alt="" loading="lazy"></div><div class="card-body"><h3 class="h3">Item four</h3><span class="price">$00</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="reveal"><h2 class="h2">Stay dry.<br>Get updates.</h2></div>
+    <div class="reveal">
+      <p class="muted">Placeholder sign-up box for new music and drops. It doesn't send anywhere yet. We'll hook it up once you pick an email service.</p>
+      <form class="signup" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Coming soon';">
+        <input type="email" placeholder="your@email.com" aria-label="Email address" required>
+        <button class="btn btn-solid" type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-big">rainhater</p>
+        <p class="muted">Short one-line tagline goes here.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul><li><a href="index.html">Home</a></li><li><a href="coaching.html">Coaching</a></li><li><a href="merch.html">Merch</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal"><span>© <span id="year">2026</span> rainhater. All rights reserved.</span><span>rainhater.com</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
