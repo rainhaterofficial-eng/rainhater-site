@@ -363,3 +363,11 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .email-big { font-size: clamp(28px, 4.4vw, 54px); line-height: 1.15; text-transform: none; overflow-wrap: anywhere; }
 .email-big a { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 3px; text-underline-offset: 6px; }
 .email-big a:hover { color: var(--accent); }
+
+/* Barebones layout: big scene, little text */
+.hero-full { min-height: calc(100vh - 73px); min-height: calc(100svh - 73px); }
+.page-full { min-height: 72vh; min-height: 72svh; display: flex; align-items: flex-end; }
+.page-full .wrap { width: 100%; }
+@media (max-width: 760px) {
+  .hero-full { min-height: calc(100svh - 132px); }
+}
