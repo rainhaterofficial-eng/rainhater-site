@@ -1,9 +1,11 @@
 # Content still needed from John
 
 ## Decisions
-- [ ] Contact: contact form that emails you, or just your email + social links?
-- [ ] Coaching: what you offer, prices, and whether people book/pay on the site
-- [ ] Merch: link to an outside store, or sell directly on the site?
+- [x] Contact: a form that emails rainhaterofficial@gmail.com (built; needs a free Formspree form connected)
+- [x] Coaching: music production coaching in Ableton Live
+- [ ] Coaching: should people book a time or pay on the site, or just send a message? (message only for now)
+- [x] Merch: sold directly on the site later; shows "coming soon" for now
+- [ ] Merch: pick a payment service when products are ready (e.g. Stripe)
 
 ## Everywhere
 - [ ] Logo (currently the word "rainhater" with a crossed-out raindrop icon)
@@ -17,18 +19,16 @@
 - [ ] Latest video: title, description, YouTube link
 - [ ] Releases: cover art, titles, years, links (4 shown)
 - [ ] Videos: thumbnails, titles, links (3 shown)
-- [ ] Short coaching pitch
 - [ ] Email sign-up: which service (or remove it)
 
 ## Coaching
-- [ ] What you coach and who it's for
-- [ ] Photo
+- [ ] Photo (e.g. you at your Ableton setup)
 - [ ] "Why work with me" text
 - [ ] Packages, prices, what's included
 - [ ] A real testimonial (or remove)
 
 ## Merch
-- [ ] Product photos, names, prices, links
+- [ ] Nothing for now ("coming soon"). Later: product photos, names, prices, sizes
 
 ## About
 - [ ] Portrait photo
@@ -37,4 +37,4 @@
 - [ ] Quote / motto
 
 ## Contact
-- [ ] Email address and handles
+- [ ] Social handles for the "Elsewhere" links
