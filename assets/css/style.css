@@ -1,15 +1,15 @@
 /* rainhater — main stylesheet */
 :root {
-  --bg: #1a2348;          /* muted window-glass navy */
-  --bg-2: #222c58;
-  --bg-3: #2b3667;
-  --line: #4a5788;        /* window frame */
+  --bg: #10162c;          /* muted window-glass navy */
+  --bg-2: #161e3a;
+  --bg-3: #1d2647;
+  --line: #333d60;        /* window frame */
   --frame: #c4ccdb;
-  --text: #f1efe9;        /* warm off-white, a little vintage */
-  --muted: #b4bccf;
+  --text: #e8e6e0;        /* warm off-white, a little vintage */
+  --muted: #9aa2b6;
   --accent: #d3d9e3;      /* silver */
   --accent-ink: #1a2348;
-  --shadow: #0d1230;
+  --shadow: #04060e;
   --silver: linear-gradient(180deg, #f4f5f7 0%, #c2c8d3 52%, #a9b0bf 53%, #e3e6ec 100%);
   --glass: linear-gradient(135deg, rgba(255,255,255,.13) 0%, rgba(255,255,255,.02) 38%, rgba(255,255,255,0) 60%, rgba(255,255,255,.06) 100%);
   --display: "Anton", "Impact", "Arial Narrow", sans-serif;
@@ -26,8 +26,8 @@ body {
   /* faint skyscraper window grid */
   /* reflective glass wall: sky glow, light streaks, faint window grid */
   background-image:
-    linear-gradient(112deg, transparent 0 30%, rgba(255,255,255,.055) 38%, transparent 44%, transparent 56%, rgba(255,255,255,.035) 61%, transparent 65%),
-    linear-gradient(180deg, rgba(170,192,216,.12) 0%, transparent 35%, rgba(170,192,216,.06) 100%),
+    linear-gradient(112deg, transparent 0 30%, rgba(255,255,255,.035) 38%, transparent 44%, transparent 56%, rgba(255,255,255,.035) 61%, transparent 65%),
+    linear-gradient(180deg, rgba(120,140,170,.08) 0%, transparent 35%, rgba(170,192,216,.06) 100%),
     repeating-linear-gradient(90deg, rgba(196,204,219,.07) 0 2px, transparent 2px 140px),
     repeating-linear-gradient(0deg, rgba(196,204,219,.07) 0 2px, transparent 2px 90px);
   background-attachment: fixed, fixed, scroll, scroll;
@@ -43,7 +43,7 @@ img { max-width: 100%; display: block; }
 body::after {
   content: ""; position: fixed; inset: 0; z-index: 100; pointer-events: none;
   background:
-    radial-gradient(ellipse at center, transparent 60%, rgba(5,10,58,.35) 100%),
+    radial-gradient(ellipse at center, transparent 50%, rgba(2,4,12,.55) 100%),
     repeating-linear-gradient(0deg, rgba(0,0,0,.04) 0 1px, transparent 1px 3px),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
   opacity: .22;
@@ -52,7 +52,7 @@ body::after {
 /* Vintage wash: faded, slightly warm, like an old broadcast */
 body::before {
   content: ""; position: fixed; inset: 0; z-index: 99; pointer-events: none;
-  background: linear-gradient(180deg, rgba(222,204,170,.07), rgba(200,186,160,.09));
+  background: linear-gradient(180deg, rgba(210,196,170,.05), rgba(190,178,156,.06));
 }
 a { color: inherit; }
 ::selection { background: var(--accent); color: var(--accent-ink); }
@@ -84,7 +84,7 @@ a { color: inherit; }
 /* ---------- Header / nav ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(26, 35, 72, .9);
+  background: rgba(14, 19, 38, .92);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
@@ -135,7 +135,7 @@ a { color: inherit; }
 .hero-media {
   position: absolute; inset: 0; z-index: -2;
   background:
-    linear-gradient(180deg, transparent 55%, rgba(26,35,72,.55) 80%, var(--bg) 100%),
+    linear-gradient(180deg, rgba(8,11,24,.35) 0%, transparent 30%, rgba(16,22,44,.6) 78%, var(--bg) 100%),
     url("../img/skyworld.svg") center bottom / cover no-repeat;
 }
 .hero-media video { width: 100%; height: 100%; object-fit: cover; }
@@ -175,7 +175,7 @@ a { color: inherit; }
 .mega .outline { color: #b9c2d2; }
 .hero p.lede {
   max-width: 560px; font-size: clamp(17px, 2vw, 21px); color: #fff; margin: 24px 0 32px;
-  background: rgba(26,35,72,.8); border-left: 4px solid var(--accent); padding: 12px 16px;
+  background: rgba(14,19,38,.82); border-left: 4px solid var(--accent); padding: 12px 16px;
 }
 .hero .kicker { background: var(--silver); color: var(--accent-ink); padding: 6px 10px; }
 
@@ -187,7 +187,7 @@ a { color: inherit; }
   font-size: 18px; text-decoration: none;
   padding: 14px 24px;
   border: 2px solid var(--text);
-  background: rgba(26,35,72,.55); color: var(--text); cursor: pointer;
+  background: rgba(14,19,38,.6); color: var(--text); cursor: pointer;
   box-shadow: 4px 4px 0 var(--shadow);
   transition: transform .15s, background .15s, color .15s;
 }
@@ -234,12 +234,12 @@ a { color: inherit; }
   border-bottom: 2px solid var(--line);
   position: relative; overflow: hidden; isolation: isolate;
   background:
-    linear-gradient(180deg, rgba(26,35,72,.15) 0%, rgba(26,35,72,.35) 50%, var(--bg) 100%),
+    linear-gradient(180deg, rgba(14,19,38,.3) 0%, rgba(14,19,38,.5) 50%, var(--bg) 100%),
     url("../img/skyworld.svg") center 78% / cover no-repeat;
 }
 .page-head .mega { font-size: clamp(56px, 14vw, 190px); }
 .page-head p { max-width: 620px; color: #fff; font-size: clamp(17px, 2vw, 20px); margin: 20px 0 0;
-  background: rgba(26,35,72,.8); border-left: 4px solid var(--accent); padding: 12px 16px; }
+  background: rgba(14,19,38,.82); border-left: 4px solid var(--accent); padding: 12px 16px; }
 
 /* ---------- Media grid ---------- */
 .grid { display: grid; gap: 20px; }
@@ -341,7 +341,7 @@ a { color: inherit; }
 .signup input:focus { outline: none; border-color: var(--accent); }
 
 /* ---------- Footer ---------- */
-.site-footer { padding: 56px 0 40px; background: var(--glass), #141b3a; border-top: 2px solid var(--line); }
+.site-footer { padding: 56px 0 40px; background: var(--glass), #0b1022; border-top: 2px solid var(--line); }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; }
 @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; } .footer-grid > :first-child { grid-column: 1 / -1; } }
 .footer-big { font-family: var(--display); font-size: clamp(56px, 10vw, 120px); line-height: .85; text-transform: lowercase; margin: 0 0 16px; }
