@@ -2,7 +2,7 @@
 <defs>
 <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141c33"/><stop offset=".6" stop-color="#2a3a5c"/><stop offset="1" stop-color="#5a6d8c"/></linearGradient>
 <linearGradient id="skyR" gradientUnits="userSpaceOnUse" x1="0" y1="470" x2="0" y2="1000"><stop offset="0" stop-color="#5a6d8c"/><stop offset=".45" stop-color="#2a3a5c"/><stop offset="1" stop-color="#141c33"/></linearGradient>
-<linearGradient id="fres" gradientUnits="userSpaceOnUse" x1="0" y1="470" x2="0" y2="1000"><stop offset="0" stop-color="#0c1124" stop-opacity=".1"/><stop offset=".35" stop-color="#0c1124" stop-opacity=".5"/><stop offset="1" stop-color="#070a17" stop-opacity=".85"/></linearGradient>
+<linearGradient id="fres" gradientUnits="userSpaceOnUse" x1="0" y1="470" x2="0" y2="1000"><stop offset="0" stop-color="#0c1124" stop-opacity=".1"/><stop offset=".35" stop-color="#0c1124" stop-opacity=".35"/><stop offset="1" stop-color="#070a17" stop-opacity=".62"/></linearGradient>
 <linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="300" y1="470" x2="1300" y2="1000"><stop offset=".3" stop-color="#fff" stop-opacity="0"/><stop offset=".42" stop-color="#fff" stop-opacity=".12"/><stop offset=".47" stop-color="#fff" stop-opacity="0"/><stop offset=".6" stop-color="#fff" stop-opacity=".07"/><stop offset=".64" stop-color="#fff" stop-opacity="0"/></linearGradient>
 <linearGradient id="hz2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6d7f9c" stop-opacity="0"/><stop offset=".48" stop-color="#7d8ea8" stop-opacity=".55"/><stop offset="1" stop-color="#6d7f9c" stop-opacity="0"/></linearGradient>
 <filter id="wisp" x="-30%" y="-10%" width="160%" height="120%">
@@ -16,24 +16,24 @@
 </defs>
 <rect width="1600" height="1000" fill="url(#sky)"/>
 <use href="#clouds" xlink:href="#clouds"/>
-<path d="M-5383,1353L791,471L791,473L-5383,1200Z" fill="#0e1428"/>
-<path d="M-5383,1353L7867,1353L811,471L791,471Z" fill="#3d4766"/>
+<path d="M-5383,1353L791,471L791,473L-5383,1200Z" fill="#03040a"/>
+<path d="M-5383,1353L7867,1353L811,471L791,471Z" fill="#07090f"/>
 <g clip-path="url(#glass)">
 <rect y="470" width="1600" height="530" fill="url(#skyR)"/>
 <use href="#clouds" xlink:href="#clouds" transform="translate(0,940) scale(1,-1)" opacity=".85"/>
 <rect y="470" width="1600" height="530" fill="url(#fres)"/>
 <rect y="470" width="1600" height="530" fill="url(#sheen)"/>
 </g>
-<use href="#panes" xlink:href="#panes" fill="none" stroke="#7d879e" stroke-width="1.1" stroke-linejoin="round"/>
-<path d="M-5436,1353L-5330,1353L791,471L791,471Z" fill="#4c5675"/>
-<path d="M-5436,1353L-5401,1353L791,471L791,471Z" fill="#9aa3b6"/>
-<path d="M-2786,1353L-2680,1353L795,471L795,471Z" fill="#4c5675"/>
-<path d="M-2786,1353L-2751,1353L795,471L795,471Z" fill="#9aa3b6"/>
-<path d="M-136,1353L-30,1353L799,471L799,471Z" fill="#4c5675"/>
-<path d="M-136,1353L-101,1353L799,471L799,471Z" fill="#9aa3b6"/>
-<path d="M2514,1353L2620,1353L803,471L803,471Z" fill="#4c5675"/>
-<path d="M2514,1353L2549,1353L803,471L803,471Z" fill="#9aa3b6"/>
-<path d="M5164,1353L5270,1353L807,471L807,471Z" fill="#4c5675"/>
-<path d="M5164,1353L5199,1353L807,471L807,471Z" fill="#9aa3b6"/>
+<use href="#panes" xlink:href="#panes" fill="none" stroke="#020308" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M-5436,1353L-5330,1353L791,471L791,471Z" fill="#05060c"/>
+<path d="M-5436,1353L-5401,1353L791,471L791,471Z" fill="#1b2133"/>
+<path d="M-2786,1353L-2680,1353L795,471L795,471Z" fill="#05060c"/>
+<path d="M-2786,1353L-2751,1353L795,471L795,471Z" fill="#1b2133"/>
+<path d="M-136,1353L-30,1353L799,471L799,471Z" fill="#05060c"/>
+<path d="M-136,1353L-101,1353L799,471L799,471Z" fill="#1b2133"/>
+<path d="M2514,1353L2620,1353L803,471L803,471Z" fill="#05060c"/>
+<path d="M2514,1353L2549,1353L803,471L803,471Z" fill="#1b2133"/>
+<path d="M5164,1353L5270,1353L807,471L807,471Z" fill="#05060c"/>
+<path d="M5164,1353L5199,1353L807,471L807,471Z" fill="#1b2133"/>
 <rect x="0" y="340" width="1600" height="270" fill="url(#hz2)"/>
 </svg>
